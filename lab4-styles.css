@@ -1,0 +1,30 @@
+body {
+    background-color: #e1e1e1;
+    font-family: "Arial", sans-serif;
+}
+
+h1 {
+    color:#420217;
+    text-align: center;
+}
+
+p {
+    color: #C84C09;
+    padding: 10px;
+}
+
+li {
+    color: #436436;
+}
+
+a {
+    color: #30BCED;
+    text-decoration: none;
+}
+
+.styled-box{
+    border: #756098 1px solid;
+    padding: 15px;
+    background-color: lightgray;
+    text-align: center;
+}
