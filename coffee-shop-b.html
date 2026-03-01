@@ -4,190 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Java Haven</title>
-
-<style>
-
-/* =====================
-   RESET + BASE STYLES
-===================== */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  min-height: 100vh;
-
-  /* GRID LAYOUT STRUCTURE */
-  display: grid;
-  grid-template-areas:
-    "header"
-    "nav"
-    "main"
-    "footer";
-  grid-template-rows: auto auto 1fr auto;
-}
-
-/* =====================
-   HEADER
-===================== */
-
-.header {
-  grid-area: header;
-  background: #7D8D86;
-  color: white;
-  text-align: center;
-  padding: 30px 15px;
-}
-
-.header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 5px;
-}
-
-/* =====================
-   NAVIGATION
-===================== */
-
-.nav {
-  grid-area: nav;
-  background: #F1F0E4;
-  padding: 12px 20px;
-}
-
-.nav ul {
-  list-style: none;
-  display: flex;              /* FLEXBOX */
-  justify-content: flex-end;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.nav a {
-  color: black;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* =====================
-   MAIN SECTION
-===================== */
-
-.main-content {
-  grid-area: main;
-  background: #A08963;  /* light blue */
-  padding: 50px 25px 60px;
-}
-
-/* SECTION TITLE */
-
-.section-title {
-  font-size: 3rem;
-  font-weight: 900;
-  margin-bottom: 40px;
-}
-
-/* =====================
-   COFFEE GRID
-===================== */
-
-.coffee-grid {
-  display: flex;               /* FLEXBOX */
-  gap: 30px;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-/* INDIVIDUAL CARD */
-
-.coffee-card {
-  flex: 1 1 250px;
-  max-width: 320px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.coffee-card h3 {
-  font-size: 1.9rem;
-  margin-bottom: 18px;
-}
-
-.coffee-card img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 25px;
-  margin-bottom: 15px;
-}
-
-.coffee-card p {
-  font-size: 1.1rem;
-  margin-bottom: 20px;
-}
-
-/* BUTTON */
-
-.order-btn {
-  background: #706D54;
-  color: white;
-  text-decoration: none;
-  padding: 14px 24px;
-  border-radius: 14px;
-  font-size: 1.3rem;
-  font-weight: bold;
-}
-
-
-/* =====================
-   YELLOW STRIP
-===================== */
-
-.main-content::after {
-  content: "";
-  display: block;
-  height: 18px;
-  background: #BCA88D; /* yellow strip */
-  margin-top: 50px;
-}
-
-/* =====================
-   FOOTER
-===================== */
-
-.footer {
-  grid-area: footer;
-  background: #7D8D86;
-  color: white;
-  text-align: center;
-  padding: 18px;
-}
-
-/* =====================
-   RESPONSIVE
-===================== */
-
-@media (max-width: 768px) {
-
-  .section-title {
-    font-size: 2.2rem;
-  }
-
-  .coffee-grid {
-    justify-content: center;
-  }
-
-  .coffee-card {
-    max-width: 400px;
-  }
-
-}
-
-</style>
+<link rel="stylesheet" href="stylesheet-b.css">
 </head>
 
 <body>
@@ -200,7 +17,7 @@ body {
 <nav class="nav">
   <ul>
     <li><a href="#">Home</a></li>
-    <li><a href="#menu">Coffee</a></li>
+    <li><a href="#">Coffee</a></li>
     <li><a href="#">About</a></li>
     <li><a href="#">Contact</a></li>
   </ul>
@@ -213,28 +30,28 @@ body {
 
     <article class="coffee-card">
       <h3>Latte</h3>
-      <img src="/latte.jpg" alt="Latte">
+      <img src="./latte.jpg" alt="Latte">
       <p>Hot or cold, with dairy or oat milk, your favorite is available anytime!</p>
       <a href="#" class="order-btn">Order Latte</a>
     </article>
 
     <article class="coffee-card">
       <h3>Coffee</h3>
-      <img src="/coffee.jpg" alt="Coffee">
+      <img src="./coffee.jpg" alt="Coffee">
       <p>Simple, elegant, and always in style, our black coffee comes from Colombia in small, hand-roasted batches.</p>
       <a href="#" class="order-btn">Order Coffee</a>
     </article>
 
     <article class="coffee-card">
       <h3>Hot Chocolate</h3>
-      <img src="/hotchoc.jpg" alt="Hot Chocolate">
+      <img src="./hotchoc.jpg" alt="Hot Chocolate">
       <p>Not a coffee person? We have you covered. Hot, sweet, ready anytime.</p>
       <a href="#" class="order-btn">Order Hot</a>
     </article>
 
     <article class="coffee-card">
       <h3>Iced Coffee</h3>
-      <img src="/iced.jpg" alt="Iced Coffee">
+      <img src="./iced.jpg" alt="Iced Coffee">
       <p>Perfect for hot summer days, our iced coffee is made with just enough sweetness to cool down your day.</p>
       <a href="#" class="order-btn">Order Iced</a>
     </article>

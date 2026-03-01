@@ -1,0 +1,180 @@
+
+/* =====================
+   RESET + BASE STYLES
+===================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+
+  /* GRID LAYOUT STRUCTURE */
+  display: grid;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+  grid-template-rows: auto auto 1fr auto;
+}
+
+/* =====================
+   HEADER
+===================== */
+
+.header {
+  grid-area: header;
+  background: #7D8D86;
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+}
+
+/* =====================
+   NAVIGATION
+===================== */
+
+.nav {
+  grid-area: nav;
+  background: #F1F0E4;
+  padding: 12px 20px;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;              /* FLEXBOX */
+  justify-content: flex-end;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* =====================
+   MAIN SECTION
+===================== */
+
+.main-content {
+  grid-area: main;
+  background: #A08963;  /* light blue */
+  padding: 50px 25px 60px;
+}
+
+/* SECTION TITLE */
+
+.section-title {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 40px;
+}
+
+/* =====================
+   COFFEE GRID
+===================== */
+
+.coffee-grid {
+  display: flex;               /* FLEXBOX */
+  gap: 30px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* INDIVIDUAL CARD */
+
+.coffee-card {
+  flex: 1 1 250px;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.coffee-card h3 {
+  font-size: 1.9rem;
+  margin-bottom: 18px;
+}
+
+.coffee-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 25px;
+  margin-bottom: 15px;
+}
+
+.coffee-card p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+/* BUTTON */
+
+.order-btn {
+  background: #706D54;
+  color: white;
+  text-decoration: none;
+  padding: 14px 24px;
+  border-radius: 14px;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+
+/* =====================
+   YELLOW STRIP
+===================== */
+
+.main-content::after {
+  content: "";
+  display: block;
+  height: 18px;
+  background: #BCA88D; /* yellow strip */
+  margin-top: 50px;
+}
+
+/* =====================
+   FOOTER
+===================== */
+
+.footer {
+  grid-area: footer;
+  background: #7D8D86;
+  color: white;
+  text-align: center;
+  padding: 18px;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+
+@media (max-width: 768px) {
+
+  .section-title {
+    font-size: 2.2rem;
+  }
+
+  .coffee-grid {
+    justify-content: center;
+  }
+
+  .coffee-card {
+    max-width: 400px;
+  }
+
+}
