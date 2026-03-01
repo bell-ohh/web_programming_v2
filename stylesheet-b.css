@@ -1,7 +1,4 @@
 
-/* =====================
-   RESET + BASE STYLES
-===================== */
 
 * {
   margin: 0;
@@ -13,7 +10,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   min-height: 100vh;
 
-  /* GRID LAYOUT STRUCTURE */
+ 
   display: grid;
   grid-template-areas:
     "header"
@@ -23,9 +20,7 @@ body {
   grid-template-rows: auto auto 1fr auto;
 }
 
-/* =====================
-   HEADER
-===================== */
+
 
 .header {
   grid-area: header;
@@ -40,9 +35,7 @@ body {
   margin-bottom: 5px;
 }
 
-/* =====================
-   NAVIGATION
-===================== */
+
 
 .nav {
   grid-area: nav;
@@ -52,7 +45,7 @@ body {
 
 .nav ul {
   list-style: none;
-  display: flex;              /* FLEXBOX */
+  display: flex;         
   justify-content: flex-end;
   gap: 20px;
   flex-wrap: wrap;
@@ -64,17 +57,13 @@ body {
   font-weight: bold;
 }
 
-/* =====================
-   MAIN SECTION
-===================== */
-
 .main-content {
   grid-area: main;
-  background: #A08963;  /* light blue */
+  background: #A08963;  
   padding: 50px 25px 60px;
 }
 
-/* SECTION TITLE */
+
 
 .section-title {
   font-size: 3rem;
@@ -82,18 +71,16 @@ body {
   margin-bottom: 40px;
 }
 
-/* =====================
-   COFFEE GRID
-===================== */
+
 
 .coffee-grid {
-  display: flex;               /* FLEXBOX */
+  display: flex;             
   gap: 30px;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-/* INDIVIDUAL CARD */
+
 
 .coffee-card {
   flex: 1 1 250px;
@@ -122,7 +109,7 @@ body {
   margin-bottom: 20px;
 }
 
-/* BUTTON */
+
 
 .order-btn {
   background: #706D54;
@@ -135,21 +122,17 @@ body {
 }
 
 
-/* =====================
-   YELLOW STRIP
-===================== */
+
 
 .main-content::after {
   content: "";
   display: block;
   height: 18px;
-  background: #BCA88D; /* yellow strip */
+  background: #BCA88D; 
   margin-top: 50px;
 }
 
-/* =====================
-   FOOTER
-===================== */
+
 
 .footer {
   grid-area: footer;
@@ -159,9 +142,7 @@ body {
   padding: 18px;
 }
 
-/* =====================
-   RESPONSIVE
-===================== */
+
 
 @media (max-width: 768px) {
 
